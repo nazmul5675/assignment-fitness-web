@@ -1,0 +1,85 @@
+/* font section */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+.inter-normal {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+/* parents control section */
+body {
+    background: rgba(17, 17, 17, 1);
+}
+
+/* shared item section start here */
+.disply-flex {
+    display: flex;
+}
+
+/* nav bar section start here */
+nav {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-logo {
+    font-weight: 800;
+    font-size: 2.02rem;
+    color: #E6533C;
+}
+
+.nav-ul {
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    border-radius: 39px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-li {
+    list-style: none;
+    padding: 12px 0px 12px 0px;
+    margin-right: 47px;
+    font-size: 1.125rem;
+    font-weight: 400;
+
+}
+
+.nav-li-btn {
+    background: #E6533C;
+    color: white;
+    margin: 4px;
+    width: 92px;
+    border-radius: 46px;
+    text-align: center;
+    margin-left: -35px;
+    margin-right: 47px;
+}
+
+.nav-item>li {
+    display: none;
+}
+
+/* media query section */
+@media screen and (max-width:576px) {
+
+    /* nav item section */
+    .nav-ul {
+        display: none;
+    }
+
+    .nav-item>li {
+        display: inherit;
+    }
+
+
+
+
+}
