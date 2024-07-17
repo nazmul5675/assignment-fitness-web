@@ -11,6 +11,8 @@
     font-variation-settings: "slnt" 0;
 }
 
+
+
 /* parents control section */
 body {
     background: rgba(17, 17, 17, 1);
@@ -20,6 +22,42 @@ body {
 .disply-flex {
     display: flex;
 }
+
+.common-btn-orange {
+    background: #E6533C;
+    color: white;
+    padding: 16px 47px 16px 47px;
+    border: none;
+    border-radius: 42px;
+    /* margin-right: 14px; */
+}
+
+.common-btn {
+    background: rgba(17, 17, 17, 1);
+    border: 2px solid rgba(48, 48, 48, 0.54);
+    color: white;
+    padding: 16px 47px 16px 47px;
+    border-radius: 42px;
+}
+
+.banner-write-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 12px;
+    border: none;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: left;
+    max-width: 206px;
+
+}
+
+
+
 
 /* nav bar section start here */
 nav {
@@ -67,7 +105,62 @@ nav {
     display: none;
 }
 
-/* media query section */
+/* banner section start here */
+.banner-container {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.banner-title {
+    font-weight: 800;
+    font-size: 4.875rem;
+    color: white;
+}
+
+.banner-description {
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.banner-btn>.common-btn-orange {
+    margin-right: 14px;
+}
+
+.banner-write>.banner-write-btn>p {
+    font-weight: 400;
+    font-size: .81rem;
+}
+
+.banner-write {
+    position: relative;
+}
+
+.banner-img {
+    max-width: 100%;
+    margin-top: 76px;
+}
+
+.btn-top {
+    position: absolute;
+    left: 260px;
+    top: 220px;
+}
+
+.btn-bottom {
+    position: absolute;
+    left: -40px;
+    top: 456px;
+}
+
+.btn-bottom>img {
+    text-align: left;
+}
+
+/* media query section for mobile */
 @media screen and (max-width:576px) {
 
     /* nav item section */
@@ -79,7 +172,38 @@ nav {
         display: inherit;
     }
 
+    /* banner section  */
 
+    .banner-container {
+        flex-direction: column;
+    }
 
+    .banner-title {
+        font-size: 3.375rem;
+    }
+
+    .banner-description {
+        font-size: .71rem;
+    }
+
+    .banner-write {
+        max-width: 100%;
+    }
+
+    .banner-write-btn {
+        width: 70%;
+    }
+
+    .btn-top {
+        position: absolute;
+        left: 145px;
+        top: 30px;
+    }
+
+    .btn-bottom {
+        position: absolute;
+        left: -25px;
+        top: 456px;
+    }
 
 }
