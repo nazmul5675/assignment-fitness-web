@@ -206,4 +206,8 @@ nav {
         top: 456px;
     }
 
+    section {
+        margin: 0 auto;
+    }
+
 }
