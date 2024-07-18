@@ -18,6 +18,10 @@ body {
     background: rgba(17, 17, 17, 1);
 }
 
+main {
+    background: black;
+}
+
 /* shared item section start here */
 .disply-flex {
     display: flex;
@@ -160,6 +164,65 @@ nav {
     text-align: left;
 }
 
+/* Change Your Habits */
+.change-container {
+    /* border: 2px solid red; */
+    background: rgb(0, 0, 0, 0.2);
+    max-width: 1044px;
+    margin: 0 auto;
+    padding: 100px 100px 50px 100px;
+}
+
+.change-text-container {
+    text-align: center;
+}
+
+.change-text-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+}
+
+.change-text-description {
+    font-size: 0.87rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.round-h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+
+}
+
+.round-p {
+    font-size: .7rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.change-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 70px;
+
+}
+
+.change-card-img {
+    width: 70%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.change-img {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
 /* media query section for mobile */
 @media screen and (max-width:576px) {
 
@@ -210,4 +273,18 @@ nav {
         margin: 0 auto;
     }
 
+    /* change section */
+    .change-card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .change-card-img {
+        width: 100%;
+
+    }
+
+    .change-card-text {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
