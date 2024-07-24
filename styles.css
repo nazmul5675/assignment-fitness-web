@@ -223,6 +223,50 @@ nav {
 }
 
 
+/* Run an Extra Mile Easily section start here */
+.run-extra-container {
+    background: rgba(34, 34, 34, 1);
+    border-radius: 18px;
+    max-width: 1100px;
+    height: 371px;
+    margin: 0 auto;
+}
+
+.run-extra-text {
+    padding: 20px 0px 40px 40px;
+}
+
+
+.run-extra-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.run-extra-description {
+    font-size: .8rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.run-extra-imges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: cover;
+    max-width: 500px;
+    border-radius: 18px;
+    margin: 30px;
+}
+
+.run-extra-img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+
+
+
 /* media query section for mobile */
 @media screen and (max-width:576px) {
 
@@ -286,5 +330,16 @@ nav {
     .change-card-text {
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+
+    /* Run an Extra Mile Easily */
+    .run-extra-container {
+        flex-direction: column;
+        height: 671px;
+    }
+
+    .run-extra-imges {
+        display: inherit;
+        flex-direction: column;
     }
 }
