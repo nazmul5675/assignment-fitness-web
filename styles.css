@@ -264,7 +264,112 @@ nav {
     border-radius: 18px;
 }
 
+/* BMI Calculator section start here */
 
+.BMI-calculator-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 88px 385px 88px 385px;
+}
+
+#BMI-calculator-h3 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+#BMI-calculator-p {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.BMI-calculator {
+
+    width: fill;
+    max-height: 471px;
+    background: rgba(34, 34, 34, 1);
+    color: white;
+}
+
+.BMI-calculator-chart h3 {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+table,
+td {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-collapse: collapse;
+    padding: 10px;
+    padding-right: 80px;
+    padding-left: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.white {
+    color: white;
+}
+
+.BMI-calculator {
+    justify-content: space-evenly;
+    padding: 120px;
+}
+
+.BMI-calculator-calculator h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 12px;
+}
+
+
+.BMI-calculator-calculator p {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 12px;
+}
+
+.BMI-calculator-input {
+    display: flex;
+    flex-wrap: wrap;
+    height: 48px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    margin: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.BMI-calculator-input-s {
+    width: 97%;
+}
+
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 20px;
+
+}
+
+.BMI-calculator-option {
+    color: black;
+    font-weight: 400;
+}
+
+.calculate-btn {
+    margin-top: 35px;
+    margin-left: 20px;
+}
 
 
 /* media query section for mobile */
@@ -334,6 +439,7 @@ nav {
 
     /* Run an Extra Mile Easily */
     .run-extra-container {
+        margin-top: 66px;
         flex-direction: column;
         height: 671px;
     }
@@ -342,4 +448,20 @@ nav {
         display: inherit;
         flex-direction: column;
     }
+
+    /* BMI Calculator section */
+    /* .BMI-calculator-text {
+        justify-content: flex-start;
+        align-items: flex-start;
+    } */
+
+    .BMI-calculator-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-direction {
+        flex-direction: column;
+    }
+
 }
