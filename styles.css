@@ -662,7 +662,8 @@ footer {
         flex-direction: column;
         max-height: 971px;
         padding: 20px;
-        font-size: 1rem
+        font-size: 1rem;
+        gap: 0px;
     }
 
     .BMI-calculator-calculator {
@@ -751,6 +752,7 @@ footer {
         flex-direction: column;
         justify-content: flex-start;
         padding: 0px;
+        gap: 50px;
     }
 
     .logo {
