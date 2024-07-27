@@ -474,8 +474,8 @@ td {
 .team-img img {
     border-radius: 20px;
     width: 100%;
-    width: 550px;
-    height: 550px;
+    width: 350px;
+    height: 350px;
 }
 
 .team-text {
@@ -494,6 +494,60 @@ td {
     color: rgba(255, 2555, 255, 0.5);
 }
 
+/* footer section start here */
+footer {
+    color: white;
+    background-color: rgba(255, 2555, 255, 0.1);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px 190px 70px 190px;
+}
+
+.logo h1 {
+    color: rgba(230, 83, 60, 1);
+    font-size: 4.375rem;
+    font-weight: 800;
+}
+
+.logo p {
+    color: rgba(255, 255, 255, .5);
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+.Get-Started-one ul>span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.Get-Started-one li {
+    color: rgba(255, 255, 255, .5);
+    font-size: 1.435rem;
+    font-weight: 400;
+    list-style: none;
+    padding: 7.5px;
+    padding-left: none;
+
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 1.25rem;
+    color: rgba(255, 2555, 255, 0.5);
+    padding: 35px;
+}
+
+.copyright hr {
+    margin-left: 190px;
+    margin-right: 190px;
+    border-color: rgba(255, 2555, 255, 0.1);
+}
 
 
 /* media query section for mobile */
@@ -652,6 +706,7 @@ td {
     }
 
     /*  our-team section */
+
     .up-img-row {
         flex-direction: column;
     }
@@ -674,6 +729,25 @@ td {
         margin: 55px;
     }
 
+    /* footer section */
+    .footer-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0px;
+    }
 
+    .logo {
+        margin-left: 20px;
+    }
+
+    .copyright hr {
+        margin-left: 19px;
+        margin-right: 19px;
+    }
+
+    /* form main section to adjust footer margin top */
+    main {
+        padding-bottom: 66px;
+    }
 
 }
