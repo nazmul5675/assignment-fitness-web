@@ -31,6 +31,10 @@ main {
     padding-bottom: 66px;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
 
 /* shared item section start here */
 .disply-flex {

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Fitness</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <header class="bg-gray-800 text-white">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <a href="index.html" class="text-2xl font-bold italic">Fitness</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-orange-500">Home</a></li>
+                    <li><a href="about.html" class="hover:text-orange-500">About</a></li>
+                    <li><a href="contact.html" class="hover:text-orange-500">Contact</a></li>
+                    <li><a href="login.html" class="text-orange-500 font-semibold">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero min-h-screen flex items-center justify-center bg-gray-100">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="text-center lg:text-left">
+                <h1 class="text-5xl font-bold text-orange-600">Login Now!</h1>
+                <p class="py-6 text-gray-700">
+                    Welcome back to *Fitness*! Log in to access your personalized dashboard and start your fitness
+                    journey with us.
+                </p>
+            </div>
+            <div class="card w-full max-w-md shadow-lg bg-white">
+                <form class="card-body" action="#" method="POST">
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-semibold">Email</span>
+                        </label>
+                        <input type="email" name="email" placeholder="Enter your email" class="input input-bordered"
+                            required />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-semibold">Password</span>
+                        </label>
+                        <input type="password" name="password" placeholder="Enter your password"
+                            class="input input-bordered" required />
+                        <label class="label">
+                            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                        </label>
+                    </div>
+                    <div class="form-control mt-6">
+                        <button type="submit" class="btn bg-orange-500 hover:bg-orange-600 text-white"><a
+                                href="index.html">Login</a></button>
+                    </div>
+                </form>
+                <div class="text-center mt-4">
+                    <p class="text-sm">Don't have an account? <a href="register.html"
+                            class="text-orange-500 font-semibold hover:underline">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto py-6 px-4 text-center">
+            <ul class="flex justify-center space-x-6 mb-4">
+                <li><a href="index.html" class="hover:text-orange-500">Home</a></li>
+                <li><a href="about.html" class="hover:text-orange-500">About</a></li>
+                <li><a href="contact.html" class="hover:text-orange-500">Contact</a></li>
+            </ul>
+            <p class="text-sm">&copy; 2024 Fitness. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
